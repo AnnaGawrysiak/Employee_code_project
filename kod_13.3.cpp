@@ -24,7 +24,7 @@ bool FindCharacter(int code, int searched_digit)
 
 
    vector<int>::iterator it;
-   for( it = arr.begin(); it! = arr.end(); ++it )
+   for( it = arr.begin(); it!= arr.end(); ++it )
    {
       if (*it == 9 || *it == searched_digit)
         return true;
@@ -158,11 +158,11 @@ cout << " Database. Press the appropraite key: \n1.- Adding new employee to the 
             cin >> employee_surname3;
 
             int changed_code = 0;
-            cout << "Wprowadz nowy kod pracownika " << employee_surname3 << " : ";
+            cout << "Type in code of a new employee: " << employee_surname3 << " : ";
             cin >> changed_code;
 
             AccessMap[employee_surname3] = changed_code;
-            cout << " po zmianie: " << AccessMap["Sabrina"] << endl;
+            //cout << " after modification: " << AccessMap["Sabrina"] << endl;
 
             }
 
